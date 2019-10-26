@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Home</title>
+  <style>
+.slide-container
+{
+width:1000px;
+height:350px;
+margin-left:auto;
+margin-right:auto;
+overflow:hidden;
+text-align:center;
+}
+.image-container
+{
+width:3000px;
+height:350px;
+position:relative;
+transition:left 2s;
+-webkit-transition:left 2s;
+}
+
+.slider-image
+{
+float:left;
+margin:8px;
+padding:0px;
+}
+
+.slider-button
+{
+display:inline-block;
+height:10px;
+width:10px;
+border-radius:5px;
+background-color:white;
+}
+#slider-image1:target ~ .image-container
+{
+left:0px;
+}
+#slider-image2:target ~ .image-container
+{
+left:-1000px;
+}
+#slider-image3:target ~ .image-container
+{
+left:-2000px;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 8px 2px;
+  cursor: pointer;
+  width:150px;
+}
+
+.button4 {border-radius: 20px;}
+
+ #navStyle
+    {
+        background-color: gray;
+        width:100%;
+        margin:auto;
+        padding-left:10px;
+    }
+    #navStyle>a
+    {
+     display:inline-block;
+     text-align:center;
+     text-decoration: none;
+     color:white;
+     padding:10px;
+     text-transform:uppercase;
+    }
+/* mouse over link */
+#navStyle > a:hover {
+  background-color:#eee;
+  color:gray;
+}
+
+</style>
+ </head>
+ <body>
+ <header>
+ <table border=1 width="100%">
+ <tr>
+ <td width="20%">
+ <img src="download.png"  height="100" width="100">
+</td>
+<td width="60%">Phone No:000-000-8392 
+Address:XXXX
+        CXVVV
+		XBBNY HHNUKK
+
+</td>
+<td width="20%">
+<button class="button button4" onclick="window.location.href='/C:/NODEJS/testProj/OrderOnline.html'">Order Online</button>
+</td>
+</table>
+</header>
+<nav id="navStyle">
+
+      <a href="/">Home</a>
+      <a href="bio.html">Order Online</a>
+	  <a href="/">Menu</a>
+      <a href="bio.html">About Us</a>
+	  <a href="/">Location</a>
+      <a href="bio.html">Contact Us</a>
+
+</nav>
+ <section>
+    <h1>Healthy Bites</h1>
+   <div class="slide-container">
+   <span id="slider-image1"></span>
+   <span id="slider-image2"></span>
+   <span id="slider-image3"></span>
+   <div class="image-container">
+   <img src="img_mountains_wide.jpg" class="slider-image">
+   <img src="img_nature_wide.jpg" class="slider-image">
+   <img src="img_snow_wide.jpg" class="slider-image">
+   </div>
+   <div class="button-container">
+   <a href="#slider-image1" class="slider-button"></a>
+   <a href="#slider-image2" class="slider-button"></a>
+   <a href="#slider-image3" class="slider-button"></a>
+   </div>
+   </div>
+
+
+  </section>
+    <footer>
+	<table border="1" width="100%">
+	<tr>
+	<td>
+	<nav>
+
+      <a href="/">Home</a>
+      <a href="bio.html">Order Online</a>
+	  <a href="/">Menu</a>
+      <a href="bio.html">About Us</a>
+	  <a href="/">Location</a>
+      <a href="bio.html">Contact Us</a>
+
+</nav></td></tr></table></footer>
+ </body>
+</html>

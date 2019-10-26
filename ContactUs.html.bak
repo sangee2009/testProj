@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us</title>
+<style>
+h2
+{
+ color:green;
+ font: size 2em;
+ text-shadow: 1px 2px 3px #666;
+ text-transform:Capitalize;
+}
+
+p
+{
+ color:red;
+ font: size 1.5em;
+ text-shadow: 1px 2px 3px #666;
+ text-transform:Capitalize;
+}
+        body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color:black;
+}
+
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+label,input
+{
+font-size:14px;
+color:green;
+ font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 600px) {
+.column, input[type=submit] {
+width:100%;
+    margin-top: 0;
+  }
+  }
+  input[type=submit]:hover {
+  background-color: gray;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+ cursor: pointer;
+}
+
+/* Style inputs */
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+ width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+
+</style>
+</head>
+<body>
+
+<h2>Responsive Contact Section</h2>
+<p>Healthy Bites - Contact Section</p>
+
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>Tickle your taste buds by ordering online, or leave us a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+       <img src="download.png"  height="100" width="100">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+       <label for="phNo">Phone No</label>
+        <input type="text" id="phNo" name="phoneNo" placeholder="Your Phone Number.."><br>
+		  <label for="emailId">Email address</label>
+        <input type="text" id="emailId" name="email" placeholder="Your Email address.."><br>
+        <label for="message">Message</label><br>
+        <textarea id="message" name="message" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Send Email">
+		<input type="submit" value="Have us call you">
+		<input type="submit" value="Call Us">
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
